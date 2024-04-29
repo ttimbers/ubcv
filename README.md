@@ -24,6 +24,8 @@ devtools::install_github("ttimbers/ubccv")
 
 ## Usage
 
+### Via RStudio
+
 1.  Inside RStudio, click on “Create a new R Markdown document”:
 
 <img src="man/figures/create_rmd.png" width=500>
@@ -36,6 +38,18 @@ devtools::install_github("ttimbers/ubccv")
     fill in the tables.
 
 4.  Click the “knit” button to render to Word\! 😂
+
+### Via terminal
+
+1. Create the template structure and open the main Rmd file:
+   ```
+   R -e "rmarkdown::draft('your-filename.Rmd', 'ubc-cv-teaching-stream', 'ubccv')"
+   ```
+2. Render to MS Word:
+   ```
+   quarto render your-filename.Rmd --to docx --output ubc-cv.docx --reference-doc reference.docx
+   ```
+
 
 ## Code of Conduct
 
