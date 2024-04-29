@@ -24,6 +24,9 @@ devtools::install_github("ttimbers/ubccv")
 
 ## Usage
 
+Note that missing/blank values in the tables will cause errors when rendering.
+You need to input values such as `N/A` or `0` instead.
+
 1.  Inside RStudio, click on “Create a new R Markdown document”:
 
 <img src="man/figures/create_rmd.png" width=500>
